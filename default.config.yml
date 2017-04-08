@@ -18,6 +18,7 @@ dotfiles_files:
 
 homebrew_installed_packages:
    - ansible
+   - bash-completion
    - dnsmasq
    - git
    - mercurial
@@ -61,7 +62,7 @@ mas_installed_apps:
   - { id: 411643860, name: "DaisyDisk" }
   - { id: 409183694, name: "Keynote" }
   - { id: 1147396723, name: "WhatsApp Desktop" }
-  - { id: 497799835, name: "Xcode" }
+#  - { id: 497799835, name: "Xcode" }
 #  - { id: 1127487414, name: "macOS Sierra" }
 mas_email: ""
 mas_password: ""
