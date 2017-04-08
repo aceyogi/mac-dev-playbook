@@ -5,7 +5,7 @@ configure_sudoers: yes
 configure_terminal: yes
 configure_osx: yes
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/aceyogi/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
 dotfiles_files:
@@ -17,62 +17,51 @@ dotfiles_files:
   - .vimrc
 
 homebrew_installed_packages:
-  # - ansible # Installed via Pip.
-  - autoconf
-  - bash-completion
-  - chromedriver
-  - doxygen
-  - gettext
-  - gifsicle
-  - git
-  - go
-  - gpg
-  - hub
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - mcrypt
-  - nmap
-  - npm
-  - nvm
-  - ssh-copy-id
-  - cowsay
-  - readline
-  - openssl
-  - pv
-  - wget
-  - wrk
+   - ansible
+   - dnsmasq
+   - git
+   - mercurial
+   - wget
 
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
   - homebrew/binary
   - homebrew/dupes
-  - homebrew/php
   - homebrew/versions
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - docker
+  - 1password
+  - atom
+  - caffeine
   - dropbox
-  # - fing # Download link keeps getting changed, d'oh!
-  - firefox
+  - flycut
   - google-chrome
+  - google-drive
   - handbrake
-  - licecap
-  - limechat
-  - macvim
+  - intellij-idea-ce
+  - launchbar
+  - nordvpn
   - nvalt
-  - sequel-pro
-  - skitch
-  - slack
-  - sublime-text
-  - transmit
+  - plex-media-player
+  - skype
+  - spotify
+  - superduper
+  - taskpaper
   - vagrant
   - virtualbox
+  - vlc
+  - ynab
+# - mactex
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
+mas_installed_apps:
+  - { id: 420212497, name: "Byword" }
+  - { id: 411643860, name: "DaisyDisk" }
+  - { id: 409183694, name: "Keynote" }
+  - { id: 1147396723, name: "WhatsApp Desktop" }
+  - { id: 497799835, name: "Xcode" }
+#  - { id: 1127487414, name: "macOS Sierra" }
 mas_email: ""
 mas_password: ""
