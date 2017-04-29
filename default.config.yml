@@ -19,9 +19,11 @@ dotfiles_files:
 homebrew_installed_packages:
    - ansible
    - bash-completion
-   - dnsmasq
+   - dockutil
    - git
    - mercurial
+   - packer
+   - rsync
    - wget
 
 homebrew_taps:
@@ -36,6 +38,7 @@ homebrew_cask_apps:
   - 1password
   - atom
   - caffeine
+  - cheatsheet
   - dropbox
   - flycut
   - google-chrome
@@ -45,12 +48,14 @@ homebrew_cask_apps:
   - launchbar
   - nordvpn
   - nvalt
-  - plex-media-player
+  - plex-media-server
   - skype
   - spotify
   - superduper
   - taskpaper
+  - transmission
   - vagrant
+  - vagrant-manager
   - virtualbox
   - vlc
   - ynab
@@ -60,9 +65,43 @@ homebrew_cask_apps:
 mas_installed_apps:
   - { id: 420212497, name: "Byword" }
   - { id: 411643860, name: "DaisyDisk" }
-  - { id: 409183694, name: "Keynote" }
+#  - { id: 409183694, name: "Keynote" }
   - { id: 1147396723, name: "WhatsApp Desktop" }
 #  - { id: 497799835, name: "Xcode" }
 #  - { id: 1127487414, name: "macOS Sierra" }
 mas_email: ""
 mas_password: ""
+
+dockitems_remove_all: true
+
+dockitems_enabled:
+  - name: System Preferences
+    path: "/Applications/System Preferences.app"
+    pos: 1
+  - name: NordVPN
+    path: "/Applications/NordVPN.app"
+    pos: 2
+  - name: Google Chrome
+    path: "/Applications/Google Chrome.app"
+    pos: 3
+  - name: Safari
+    path: "/Applications/Safari.app"
+    pos: 4
+  - name: Spotify
+    path: "/Applications/Spotify.app"
+    pos: 5
+  - name: Task Paper
+    path: "/Applications/TaskPaper.app"
+    pos: 6
+  - name: Atom
+    path: "/Applications/Atom.app"
+    pos: 7
+  - name: Intellij IDEA CE
+    path: "/Applications/IntelliJ IDEA CE.app"
+    pos: 8
+  - name: Plex Media Server
+    path: "/Applications/Plex Media Server.app"
+    pos: 9
+  - name: Terminal
+    path: "/Applications/Utilities/Terminal.app"
+    pos: 10
